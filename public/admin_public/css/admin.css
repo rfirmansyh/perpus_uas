@@ -1,0 +1,21 @@
+.table-clickable > tbody > tr[data-target] > td:not([data-col]) {
+    cursor: pointer;
+}
+.img-profile {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+}
+
+.img-profile > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 576px) {
+    .img-profile {
+        width: 80px;
+        height: 80px;
+    }
+}
