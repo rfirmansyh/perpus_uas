@@ -85,7 +85,7 @@ class Buku_model {
 
         $query = "INSERT INTO $this->table
                     VALUES
-                    ('', '$file', :kode_buku, :judul_buku, :overview_buku, :penulis_buku, :penerbit_buku, :tanggal_terbit, :stok, :rak_id, :kategori_buku_id, :tanggal_input)";
+                    ('', :judul_buku, '$file', :kode_buku, :overview_buku, :penulis_buku, :penerbit_buku, :tanggal_terbit, :stok, :rak_id, :kategori_buku_id, :tanggal_input)";
 
         // v = validate
         $v_kode_buku = Form_validation::validate($data['kode_buku'], 'Kode Buku' ,'required|min_length_6');
